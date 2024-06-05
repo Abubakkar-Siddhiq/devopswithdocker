@@ -1,0 +1,16 @@
+PS E:\devopswithdocker\Part-1\1.12\material-applications\example-frontend> docker build . -t node-image
+PS E:\devopswithdocker\Part-1\1.12\material-applications\example-frontend> docker run -p 5000:5000 node-image
+ INFO  Accepting connections at http://localhost:5000
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 GET /
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 Returned 200 in 95 ms
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 GET /static/css/main.eaa5d75e.chunk.css
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 GET /static/js/2.43ca3586.chunk.js
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 Returned 200 in 14 ms
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 GET /static/js/main.1be634bd.chunk.js
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 Returned 200 in 10 ms
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 Returned 200 in 29 ms
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 GET /static/js/main.1be634bd.chunk.js
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 Returned 200 in 3 ms
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 GET /static/js/2.43ca3586.chunk.js
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 Returned 200 in 2 ms
+ HTTP  6/5/2024 2:17:24 PM 172.17.0.1 GET /static/media/toskalogo.c0f35cf0.svg
