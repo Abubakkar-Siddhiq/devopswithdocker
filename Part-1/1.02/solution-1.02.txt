@@ -1,0 +1,4 @@
+PS E:\devopswithdocker\Part-1\1.02> docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+PS E:\devopswithdocker\Part-1\1.02> docker images
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
