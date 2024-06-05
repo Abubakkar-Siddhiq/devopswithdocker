@@ -1,0 +1,5 @@
+PS E:\devopswithdocker\Part-1> docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                        PORTS     NAMES
+8566f2edef32   nginx     "/docker-entrypoint.…"   6 seconds ago    Up 5 seconds                  80/tcp    great_hoover
+a54c048d8220   nginx     "/docker-entrypoint.…"   14 seconds ago   Exited (0) 10 seconds ago               confident_bassi
+e6f2bb70f131   nginx     "/docker-entrypoint.…"   25 seconds ago   Exited (0) 16 seconds ago               eager_goodall
