@@ -1,0 +1,26 @@
+PS E:\devopswithdocker\Part-1\1.08> docker build . -t web-server
+[+] Building 0.0s (0/0)  docker:default
+2024/06/05 15:18:34 http2: server: error reading preface from client //./pip[+] Building 0.4s (5/5) FINISHED                             docker:default
+ => [internal] load build definition from Dockerfile                   0.0s
+ => => transferring dockerfile: 94B                                    0.0s
+ => [internal] load metadata for docker.io/devopsdockeruh/simple-web-  0.0s
+ => [internal] load .dockerignore                                      0.0s
+ => => transferring context: 2B                                        0.0s
+ => [1/1] FROM docker.io/devopsdockeruh/simple-web-service:alpine      0.1s
+ => exporting to image                                                 0.1s
+ => => exporting layers                                                0.0s
+ => => writing image sha256:b270552b2b2ffb0226236922340399bbe75cf3e05  0.0s
+ => => naming to docker.io/library/web-server                          0.0s
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+
+PS E:\devopswithdocker\Part-1\1.08> docker run web-server
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:   export GIN_MODE=release
+ - using code:  gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
