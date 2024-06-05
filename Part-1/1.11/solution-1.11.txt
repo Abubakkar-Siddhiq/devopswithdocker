@@ -1,0 +1,3 @@
+PS E:\devopswithdocker\Part-1\1.11> docker build . -t spring-image
+PS E:\devopswithdocker\Part-1\1.11> docker run -p 8080:8080 -d spring-image
+f7d016eb6f0c142e30dfc5129d122fe19c58bd43947ce68d6b2dfe71854fd9c7
