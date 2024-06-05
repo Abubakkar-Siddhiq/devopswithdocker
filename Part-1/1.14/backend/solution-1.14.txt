@@ -1,2 +1,0 @@
-PS E:\devopswithdocker\Part-1\1.13\material-applications\example-backend> docker build . -t go-backend && docker run -p 8080:8080 go-backend
-PS E:\devopswithdocker\Part-1\1.13\material-applications\example-frontend> docker build . -t react-frontend && docker run -p 5000:5000 react-frontend
