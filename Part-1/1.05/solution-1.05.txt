@@ -1,0 +1,42 @@
+E:\devopswithdocker\Part-1\1.05>docker pull  devopsdockeruh/simple-web-service:alpine
+alpine: Pulling from devopsdockeruh/simple-web-service
+ba3557a56b15: Pull complete
+1dace236434b: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview devopsdockeruh/simple-web-service:alpine
+
+E:\devopswithdocker\Part-1\1.05>docker pull  devopsdockeruh/simple-web-service:ubuntu
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+Digest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Image is up to date for devopsdockeruh/simple-web-service:ubuntu
+docker.io/devopsdockeruh/simple-web-service:ubuntu
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview devopsdockeruh/simple-web-service:ubuntu
+
+E:\devopswithdocker\Part-1\1.05>docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   3 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 years ago   15.7MB
+
+E:\devopswithdocker\Part-1\1.05>docker run -d -it devopsdockeruh/simple-web-service:alpine
+822dc585336d699da759a9a4b5a03aa3571dd47d36d3caa3704dfb101bfdb93a
+
+E:\devopswithdocker\Part-1\1.05>docker exec -it 822dc585336d699da759a9a4b5a03aa3571dd47d36d3caa3704dfb101bfdb93a sh
+/usr/src/app # tail -f ./text.log
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-05 07:18:31 +0000 UTC
+2024-06-05 07:18:33 +0000 UTC
+2024-06-05 07:18:35 +0000 UTC
+2024-06-05 07:18:37 +0000 UTC
+2024-06-05 07:18:39 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-05 07:18:41 +0000 UTC
+2024-06-05 07:18:43 +0000 UTC
+2024-06-05 07:18:45 +0000 UTC
+2024-06-05 07:18:47 +0000 UTC
