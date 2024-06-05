@@ -1,0 +1,15 @@
+PS E:\devopswithdocker\Part-1\1.07> docker build . -t curler
+[+] Building 0.0s (0/0)  docker:default
+....
+....
+PS E:\devopswithdocker\Part-1\1.07> docker run -it curler
+Input website:
+helsinki.fi
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.22.1</center>
+</body>
+</html>
