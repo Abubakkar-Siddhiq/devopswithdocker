@@ -1,0 +1,4 @@
+PS E:\devopswithdocker\Part-1\1.09> notepad result.log
+PS E:\devopswithdocker\Part-1\1.09> docker run -v "$(pwd)/result.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
+Starting log output
+Wrote text to /usr/src/app/text.log
