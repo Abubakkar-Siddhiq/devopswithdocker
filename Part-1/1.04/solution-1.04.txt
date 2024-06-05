@@ -1,0 +1,21 @@
+PS E:\devopswithdocker\Part-1\1.04> docker run -d -it --name website ubuntu
+PS E:\devopswithdocker\Part-1\1.04> docker exec -it website bash
+root@582e0c4bdf7f:/# apt-get update
+... output ...
+root@582e0c4bdf7f:/# apt-get install curl
+... output ...
+root@582e0c4bdf7f:/# exit
+PS E:\devopswithdocker\Part-1\1.04> cmd
+(Powershell's String processing is such a headache!)
+E:\devopswithdocker\Part-1\1.04>docker exec -it website sh -c "while true; do echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://$website; done"
+Input website:
+helsinki.fi
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.22.1</center>
+</body>
+</html>
+Input website:
